@@ -1,0 +1,67 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "heatmap",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 5,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 28,
+      "Copy" : 118,
+      "Convolution" : 568,
+      "ActivationSigmoid" : 112,
+      "Transpose" : 1,
+      "UpsampleBiLinear" : 3,
+      "UpsampleNearestNeighbor" : 101,
+      "SplitND" : 113,
+      "Add" : 135,
+      "Multiply" : 168,
+      "ConcatND" : 85,
+      "ActivationReLU" : 203,
+      "PoolingAverage" : 140
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.1.0",
+      "com.github.apple.coremltools.source" : "torch==1.10.1"
+    },
+    "generatedClassName" : "Golf_fo_Litehrnet_30_384x288_tensor_fp32_v10",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 384 × 288 × 3)",
+        "shortDescription" : "",
+        "shape" : "[1, 384, 288, 3]",
+        "name" : "image",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]

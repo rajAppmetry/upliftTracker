@@ -1,0 +1,5 @@
+
+ˆImageTransformationCalculatorIMAGE_GPU:input_video"IMAGE_GPU:rotated_image*ROTATION_DEGREES:rotation*OUTPUT_DIMENSIONS:dimensions
+…UpliftPoseLandmarksGpuIMAGE:rotated_image"LANDMARKS:landmarks"DETECTION:detection"%ROI_FROM_LANDMARKS:roi_from_landmarks"%ROI_FROM_DETECTION:roi_from_detection"IMAGE:model_image*MODEL_INDEX:model_index*USE_ANE:use_ane*!SMOOTH_LANDMARKS:smooth_landmarks
+ºUpliftPoseRendererGpuIMAGE:rotated_image&NORM_RECT_LANDMARKS:roi_from_landmarks&NORM_RECT_DETECTION:roi_from_detectionLANDMARKS:landmarksDETECTION:detection"IMAGE:output_videoRinput_videozoutput_videoz	landmarks‚rotation‚
+dimensions‚smooth_landmarks‚model_index‚USE_ANE:use_ane
