@@ -16,10 +16,9 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "UpliftTracker",
-            path: "Sources/UpliftTracker",
-            publicHeadersPath: "Headers", // Public headers for Objective-C
+            publicHeadersPath: "UpliftTracker/Headers", // Public headers for Objective-C
             cSettings: [
-                .headerSearchPath("Headers"), // Include header search path
+                .headerSearchPath("UpliftTracker/Headers"), // Include header search path
             ]
         )
     ]
