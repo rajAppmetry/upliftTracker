@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
-import UpliftTrackerSPM
+import UpliftTracker
 
 @main
 struct UpliftTrackerExampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    let object = GooglePoseTracker.init()
+                    print(object?.description)
+                }
         }
     }
 }
